@@ -25,5 +25,3 @@ class Restaurante:
 restaurante_serto = Restaurante('Sertó', 'Comida Mineira')
 restaurante_serto.alternar_estado()
 restaurante_caracol = Restaurante('Caracol Bar', 'Bar')
-
-Restaurante.listar_restaurantes()
