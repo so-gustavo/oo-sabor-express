@@ -1,17 +1,14 @@
 from modelos.restaurante import Restaurante
+from modelos.cardapio.bebida import Bebida
+from modelos.cardapio.prato import Prato
 
 restaurante_omotebako = Restaurante('Omotebako', 'Izakaya')
-
-restaurante_serto = Restaurante('Sertó', 'Comida Mineira')
-restaurante_serto.alternar_estado()
-restaurante_serto.receber_avaliacao('Sawyer', 5)
-restaurante_serto.receber_avaliacao('Joey', 4)
-restaurante_serto.receber_avaliacao('Isis', 4)
-
-restaurante_caracol = Restaurante('Caracol Bar', 'Bar')
-restaurante_omotebako.alternar_estado()
+bebida_suco = Bebida('Negroni', 22.0, 'único')
+baiao_de_dois = Prato('Baião de Dois', 59.0, 'Com feijão fradinho, carne seca, queijo coalho e especiarias nordestinas')
 
 def main():
-    Restaurante.listar_restaurantes()
+    print(bebida_suco)
+    print(baiao_de_dois)
+
 if __name__ == '__main__':
     main()
